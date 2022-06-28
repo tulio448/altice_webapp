@@ -1,0 +1,10 @@
+<mat-card class="card">
+  <mat-card-title>Sequencia Alticci</mat-card-title>
+  <input matInput placeholder="Número" #numero type="number">
+  <mat-card-content class="content">
+    <p>{{ resultado }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="calcular(numero.valueAsNumber)">Calcular</button>
+  </mat-card-actions>
+</mat-card>
